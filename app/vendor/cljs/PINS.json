@@ -1,0 +1,8 @@
+{
+  "source": "https://github.com/kotoba-lang/kotoba lib/kotoba.text/src/kotoba/lang/text.cljk",
+  "revision": "38654600c00caea2caec9ec0650625f2f6a69378",
+  "note": "same revision the repo's deps.edn pins; renamed .cljc for the ClojureScript compiler",
+  "files": {
+    "kotoba/lang/text.cljc": "4f62e846a620ec49f5c84a69f6788b97cff4e53d4248beb02b4b41434d58a55b"
+  }
+}
