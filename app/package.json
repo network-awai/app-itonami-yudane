@@ -1,0 +1,26 @@
+{
+  "name": "@itonami/yudane-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "itonami": {
+    "id": "network.itonami.yudane",
+    "title": "Yudane",
+    "storageKey": "itonami.yudane.v1",
+    "description": "委ね — 暮らしの予定から生まれる電力の柔軟性を、同意と匿名性の条件で確かめます。申し出ごとに、能力（capability）・期限・互恵性・k-匿名性（5 人以上）を判定し、集計だけを示します。個人のデータは扱わず、外部へは何も送信しません。",
+    "cljsSources": [
+      "../src"
+    ],
+    "storeId": "network.itonami.yudane"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "tauri": "tauri",
+    "build:desktop": "npm run build && tauri build --no-bundle",
+    "build:android": "sh scripts/android-apk.sh"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "3.0.0-alpha.6"
+  }
+}

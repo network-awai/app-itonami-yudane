@@ -1,0 +1,4 @@
+;; ClojureScript build of the domain (AWAI-3502). Paths are filled by scripts/build.mjs:
+;; build/cljs-src holds the repo's .cljk sources copied as .cljc, the pinned kotoba.lang.text and src/cljs.
+{:paths ["build/cljs-src"]
+ :deps {org.clojure/clojurescript {:mvn/version "1.12.145"}}}
