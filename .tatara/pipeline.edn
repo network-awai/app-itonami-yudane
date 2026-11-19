@@ -1,0 +1,8 @@
+;; Run the existing static app build and tests in the pinned offline toolchain.
+{:tier :t2
+ :toolchain :cljs-jvm-v1
+ :network :none
+ :quorum 2
+ :timeout-seconds 300
+ :steps [["/opt/tatara-toolchains/cljs-jvm-v1/tatara-cljs-test"]]
+ :artifacts []}
